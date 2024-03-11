@@ -3,5 +3,15 @@ layout: layout.liquid
 title: 11ty Boilerplate
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<body class="bg-#fffbeb text-#451a03 flex flex-col justify-center items-center h-screen">
+    <h1 class="text-4xl mb-4">Products</h1>
+    <h2 class="text-3xl mb-2">Lights</h2>
+    <div x-data="{fake_data: $fetchjson('https://dummyjson.com/products/28'), jsonItem: 'thumbnail'}">
+        <img alt="thumbnail" x-bind:src="thumbImage" class="rounded-md mb-4">
+    </div>
+
+    <h2 class="text-2xl mb-2">Plant hanger</h2>
+    <div x-data="{fake_data: $fetchjson('https://dummyjson.com/products/26'), jsonItem: 'thumbnail2'}">
+        <img alt="thumbnail2" x-bind:src="thumbImage2" class="rounded-md mb-4">
+    </div>
+</body>
