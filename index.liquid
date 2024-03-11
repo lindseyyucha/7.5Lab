@@ -6,9 +6,9 @@ title: 11ty Boilerplate
     <h1 class="text-4xl mb-4">Products</h1>
     <h2 class="text-3xl mb-2">Lights</h2>
      <div x-data ="{thumbImage: $fetchjson('https://dummyjson.com/products/28', jsonItem = 'thumbnail')}">
- <img alt = "thumbnail" x-bind:src="thumbImage" class = "rounded-md mb-4 w-32 h-32" />
+ <img alt = "thumbnail" x-bind:src="thumbImage" class = "rounded-md mb-4 w-50 h-50 justify-center items-center" />
 
     <h2 class="text-3xl mb-2">Plant Hanger</h2>
   <div x-data ="{thumbImageOne: $fetchjson('https://dummyjson.com/products/26', jsonItem = 'thumbnail')}">
- <img alt = "thumbnail" x-bind:src="thumbImageOne" class = "rounded-md mb-4 w-32 h-32" />
+ <img alt = "thumbnail" x-bind:src="thumbImageOne" class = "rounded-md mb-4 w-50 h-50 justify-center items-center" />
 </body>
