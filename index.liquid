@@ -6,12 +6,12 @@ title: 11ty Boilerplate
 <body class="bg-yellow-50 text-yellow-950 flex flex-col justify-center items-center h-screen">
     <h1 class="text-4xl mb-4">Products</h1>
     <h2 class="text-3xl mb-2">Lights</h2>
-    <div x-data="{fakeImage: $fetchjson('https://dummyjson.com/products/28'), jsonItem: 'thumbnail'}">
-        <img alt="thumbnail" x-bind:src="fakeImage" class="rounded-md mb-4"/>
+    <div x-data="{fakeImage: $fetchjson('https://dummyjson.com/products/28', jsonItem: 'fakeimage')}">
+        <img alt="fake" x-bind:src="fakeImage" class="rounded-md mb-4"/>
     </div>
 
     <h2 class="text-2xl mb-2">Plant Hanger</h2>
-    <div x-data="{fakeImage2: $fetchjson('https://dummyjson.com/products/26'), jsonItem: 'thumbnail2'}">
-        <img alt="thumbnail2" x-bind:src="fakeImage2" class="rounded-md mb-4"/>
+    <div x-data="{fakeImage2: $fetchjson('https://dummyjson.com/products/26', jsonItem: 'fakeimage2')}">
+        <img alt="fakeimage2" x-bind:src="fakeImage2" class="rounded-md mb-4"/>
     </div>
 </body>
